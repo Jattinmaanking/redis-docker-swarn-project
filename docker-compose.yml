@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  redis:
+    image: jatinmaan29/redis:latest
+    deploy:
+      replicas: 3 # adjust the number of replicas as needed
+    ports:
+      - "6379:6379"
